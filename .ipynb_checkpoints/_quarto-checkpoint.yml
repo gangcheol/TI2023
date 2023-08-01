@@ -2,12 +2,19 @@ project:
   type: website
   output-dir : docs  
 website:
-  title: "Tableau Intro(2023)"
+  title: "Gangcheol"
   page-navigation: true
   navbar:
+    left:
+       - text : "Lecture"
+         href : https://gangcheol.github.io/mysite/
+       - text : "Tableau"
+         href : https://gangcheol.github.io/TI2023/
+       - text : "DX"
+         href : https://gangcheol.github.io/mysite2/
     right:
-      - icon : github
-        href : https://github.com/gangcheol/
+      - icon: github
+        href: https://github.com/gangcheol/
   sidebar:
     style: "docked"
     search: True

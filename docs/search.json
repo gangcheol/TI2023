@@ -233,16 +233,44 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Tableau Intro",
+    "title": "GangCheol",
     "section": "",
     "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nch2. 태블로 기초 이해\n\n\nGANGCHEOL LEE\n\n\n\n\n\nJul 26, 2023\n\n\nch1. 태블로 이해하기\n\n\nGANGCHEOL LEE\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n- 전북대학교 통계학과 학사(부전공: 컴퓨터공학) 졸업 | 3.67 / 4.50 | 2015. 03 ~ 2021. 02\n- 전북대학교 통계학과 석사 졸업 | 4.44 / 4.50 | 2021. 03 ~ 2023. 02"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n- 국민연금공단 빅데이터부 현장실습 | 2020. 03 ~ 2020. 06\n- 지역 문화산업 융복합 데이터 전문가 과정 | 과학기술정보통신부, 한국데이터산업진흥원 | 2021. 06 ~ 2021. 08\n- 빅데이터 혁신공유대학사업 서포터즈 |전북대학교 빅데이터 현신공유대학사업| 2021. 07. 01 ~ 2021. 10. 31\n- KT AIVLE School DX Consultant Track | KT | 2023. 08 ~"
+  },
+  {
+    "objectID": "about.html#publications",
+    "href": "about.html#publications",
+    "title": "About Me",
+    "section": "Publications",
+    "text": "Publications\n- 데이터 분석을 통한 지역별 고령친화도 시각화\n`-` 김영선, 강민구, 이강철 등  | 문화융복합아카이빙연구소 | 2021. 10 | 기록관리/보존 \n- 핵심어 추출 및 데이터 증강기법을 이용한 텍스트 분류 모델 성능 개선\n`-` 이강철, 안정용 | 한국자료분석학회 | 한국자료분석학회 | 2022. 10 | 통계학"
+  },
+  {
+    "objectID": "about.html#certificate",
+    "href": "about.html#certificate",
+    "title": "About Me",
+    "section": "Certificate",
+    "text": "Certificate\n- 워드프로세서 | 대한상공회의소 | 19-19-017981 | 2019. 08. 30\n- 데이터분석준전문가(ADsP) | 한국데이터진흥원 | ADsP-0223898 | 2019. 10. 01\n- 사회조사분석사 2급 | 한국산업인력공단 | 19201142418N | 2019. 10. 01"
+  },
+  {
+    "objectID": "about.html#conctact",
+    "href": "about.html#conctact",
+    "title": "About Me",
+    "section": "Conctact",
+    "text": "Conctact\n- rkdcjf8232@gmail.com"
   },
   {
     "objectID": "posts/2023-07-26-ch.1.html",
