@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="GANGCHEOL LEE">
+<meta name="dcterms.date" content="2023-08-08">
 
-<title>Gangcheol - About Me</title>
+<title>Gangcheol - 00. 대시보드 만들기</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./posts/ch1/2023-07-26-ch.1.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" rel="next">
+<link href="../../posts/ch2/2023-07-27-ch.2.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,8 +64,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -72,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Gangcheol</span>
     </a>
   </div>
@@ -112,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html"><strong>About Me</strong></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Posts</li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html">Ch3</a></li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html">00. 대시보드 만들기</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -122,7 +128,38 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">00. 대시보드 만들기</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">tableau</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>GANGCHEOL LEE </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 8, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -134,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>About Me</strong></span></a>
   </div>
 </li>
@@ -158,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch1/2023-07-26-ch.1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch1/2023-07-26-ch.1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ch1. 태블로 이해하기</span></a>
   </div>
 </li>
@@ -175,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch2/2023-07-27-ch.2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch2/2023-07-27-ch.2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ch2. 태블로 기초 이해</span></a>
   </div>
 </li>
@@ -183,22 +220,22 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Ch3</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">00. 대시보드 만들기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01. 스토리 만들기</span></a>
   </div>
 </li>
@@ -216,73 +253,96 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#대시보드-만들기" id="toc-대시보드-만들기" class="nav-link active" data-scroll-target="#대시보드-만들기">대시보드 만들기</a>
+  <ul class="collapse">
+  <li><a href="#연간매출" id="toc-연간매출" class="nav-link" data-scroll-target="#연간매출">연간매출</a></li>
+  <li><a href="#월간-매출" id="toc-월간-매출" class="nav-link" data-scroll-target="#월간-매출">월간 매출</a></li>
+  <li><a href="#시도별-매출" id="toc-시도별-매출" class="nav-link" data-scroll-target="#시도별-매출">시도별 매출</a>
+  <ul class="collapse">
+  <li><a href="#맵차트에-파이차트-오버레이" id="toc-맵차트에-파이차트-오버레이" class="nav-link" data-scroll-target="#맵차트에-파이차트-오버레이">맵차트에 파이차트 오버레이</a></li>
+  </ul></li>
+  <li><a href="#대시보드-생성" id="toc-대시보드-생성" class="nav-link" data-scroll-target="#대시보드-생성">대시보드 생성</a>
+  <ul class="collapse">
+  <li><a href="#연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" id="toc-연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" class="nav-link" data-scroll-target="#연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가">연간매출 클릭시 월간매출과 시도 매출에 변화옵션추가</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<section id="section" class="level3">
-<h3 data-anchor-id="section"></h3>
+
+<section id="대시보드-만들기" class="level1">
+<h1>대시보드 만들기</h1>
+<section id="연간매출" class="level2">
+<h2 class="anchored" data-anchor-id="연간매출">연간매출</h2>
+<p><code>-</code> 연간매출 워크시트 생성</p>
+<ul>
+<li>주문일자와 매출을 이용하여 하이라이트 테이블 생성</li>
+</ul>
+<p><img src="1.png" width="800"></p>
 </section>
-<div class="quarto-about-jolla">
-  <img src="증명사진.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><strong>About Me</strong></h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><div id="hero-heading">
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><code>-</code> 전북대학교 통계학과 학사(부전공: 컴퓨터공학) 졸업 | 3.67 / 4.50 | 2015. 03 ~ 2021. 02</p>
-<p><code>-</code> 전북대학교 통계학과 석사 졸업 | 4.44 / 4.50 | 2021. 03 ~ 2023. 02</p>
+<section id="월간-매출" class="level2">
+<h2 class="anchored" data-anchor-id="월간-매출">월간 매출</h2>
+<p><code>-</code> 월간매출 워크시트 생성 (2018 ~ 2021에 월간 매출 합을 계산)</p>
+<p><img src="2.png" width="800"></p>
 </section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p><code>-</code> 국민연금공단 빅데이터부 현장실습 | 2020. 03 ~ 2020. 06</p>
-<p><code>-</code> 지역 문화산업 융복합 데이터 전문가 과정 | 과학기술정보통신부, 한국데이터산업진흥원 | 2021. 06 ~ 2021. 08</p>
-<p><code>-</code> 빅데이터 혁신공유대학사업 서포터즈 |전북대학교 빅데이터 현신공유대학사업| 2021. 07. 01 ~ 2021. 10. 31</p>
-<p><code>-</code> KT AIVLE School DX Consultant Track | KT | 2023. 08 ~</p>
+<section id="시도별-매출" class="level2">
+<h2 class="anchored" data-anchor-id="시도별-매출">시도별 매출</h2>
+<p><code>-</code> 시도별 매출을 지도형태로 표현</p>
+<p><code>-</code> 시도 변수를 이용하여 위도와 경도 데이터 산출</p>
+<p><img src="3.png" width="250"></p>
+<p><code>-</code> 그런 다음 새로운 워크시트를 생성해 시도를 더블클릭</p>
+<p><code>-</code> 그 다음 마크를 맵으로 변경</p>
+<p><img src="4.png" width="800"></p>
+<p><code>-</code> 백그라운드 레이어 선택후 투명도를 100으로 설정</p>
+<p><img src="5.png" width="200"></p>
+<p><img src="6.png" width="500"></p>
+<p><code>-</code> 매출을 색상 마크에 드래그</p>
+<p><img src="7.png" width="500"></p>
+<section id="맵차트에-파이차트-오버레이" class="level3">
+<h3 class="anchored" data-anchor-id="맵차트에-파이차트-오버레이">맵차트에 파이차트 오버레이</h3>
+<p><code>-</code> 열에 경도를 <code>ctrl + 마우스 왼쪽</code>으로 드래그</p>
+<p><img src="8.png" width="250"></p>
+<p><code>-</code> 새롭게 산출된 <code>경도(생성됨 (2))</code>에서 합계(매출을) 마크에서 제외하고 맵을 파이차트로 변경</p>
+<p><img src="9.png" width="150"></p>
+<p><code>-</code> 그 후, 고객 세그먼트를 색상, 매출을 크기와 각도로 넣고 효과있는 색상 테두리를 흰색으로 지정</p>
+<p><img src="10.png" width="750"></p>
+<p><code>-</code> 이중축 사용</p>
+<p><img src="11.png" width="200"></p>
+<p><img src="12.png" width="500"></p>
 </section>
-<section id="publications" class="level2">
-<h2 data-anchor-id="publications">Publications</h2>
-<p><code>-</code> <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002773972">데이터 분석을 통한 지역별 고령친화도 시각화</a></p>
-<pre><code>`-` 김영선, 강민구, 이강철 등  | 문화융복합아카이빙연구소 | 2021. 10 | 기록관리/보존 </code></pre>
-<p><code>-</code> <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002890029">핵심어 추출 및 데이터 증강기법을 이용한 텍스트 분류 모델 성능 개선</a></p>
-<pre><code>`-` 이강철, 안정용 | 한국자료분석학회 | 한국자료분석학회 | 2022. 10 | 통계학</code></pre>
 </section>
-<section id="certificate" class="level2">
-<h2 data-anchor-id="certificate">Certificate</h2>
-<p><code>-</code> 워드프로세서 | 대한상공회의소 | 19-19-017981 | 2019. 08. 30</p>
-<p><code>-</code> 데이터분석준전문가(ADsP) | 한국데이터진흥원 | ADsP-0223898 | 2019. 10. 01</p>
-<p><code>-</code> 사회조사분석사 2급 | 한국산업인력공단 | 19201142418N | 2019. 10. 01</p>
-</section>
-<section id="conctact" class="level2">
-<h2 data-anchor-id="conctact">Conctact</h2>
-<p><code>-</code> <a href="mailto:rkdcjf8232@gmail.com" class="email">rkdcjf8232@gmail.com</a></p>
-</section>
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://github.com/gangcheol/" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-</div>
+<section id="대시보드-생성" class="level2">
+<h2 class="anchored" data-anchor-id="대시보드-생성">대시보드 생성</h2>
+<p><code>-</code> 매출 대시보드 생성 후 연간 매출을 드래그</p>
+<p><code>-</code> 그다음 <code>ctrl + 마우스 왼쪽</code>으로 월간 매출을 드래그하여 아래, 시도별 매출을 월간 매출 오른쪽에 드래그</p>
+<p><img src="13.png" width="600"></p>
+<p><code>-</code> 생성된 대시보드의 범례를 보니 고객세그먼트를 제외하고 나머지 범례는 필요가 없는것 같다.</p>
+<p><code>-</code> 고객 세그먼트를 제외한 범례들을 제거하고, 고객 세그먼트 범례의 세모박스를 클릭 후 부통을 체크해 적절한 공간에 배치하자.</p>
+<p><img src="14.png" width="600"></p>
+<p><code>-</code> 또한, 연간 매출은 쓸데없이 너무 큰 비율을 차지한다. 마우스로 적당히 드래그하여 변경해준다.</p>
+<p><img src="15.png" width="500"></p>
+<section id="연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" class="level3">
+<h3 class="anchored" data-anchor-id="연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가">연간매출 클릭시 월간매출과 시도 매출에 변화옵션추가</h3>
+<p><code>-</code> 상단 메뉴바에서 아래와 같이 선택</p>
+<p><img src="16.png" width="200"></p>
+<p><code>-</code> 동작 추가 <span class="math inline">\(\to\)</span> 필터 선택</p>
+<p><img src="17.png" width="300"></p>
+<p><code>-</code> 동작 세부 옵션 추가</p>
+<p><img src="18.png" width="300"></p>
+<p><code>-</code> 월간 매출 클릭에 대한 동작 옵션도 위를 참고하여 작성 (2018 기준 변환 결과)</p>
+<p><img src="19.png" width="500"></p>
+<p><code>-</code> 생성한 대시보드 공유</p>
+<p><code>-</code> 파일 <span class="math inline">\(\to\)</span> 태블로 퍼블릭에 다른 이름으로 저장 클릭 후 대시보드 이름 입력</p>
+<p><a href="https://public.tableau.com/app/profile/leegangcheol/viz/_16914857162340/sheet3?publish=yes">대시보드 링크</a></p>
 
-<section id="section-1" class="level3">
-<h3 data-anchor-id="section-1"></h3>
 
-
-
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -306,6 +366,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -514,10 +581,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../posts/ch2/2023-07-27-ch.2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ch2. 태블로 기초 이해</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./posts/ch1/2023-07-26-ch.1.html" class="pagination-link">
-        <span class="nav-page-text">ch1. 태블로 이해하기</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="pagination-link">
+        <span class="nav-page-text">01. 스토리 만들기</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

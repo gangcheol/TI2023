@@ -9,7 +9,7 @@
 <meta name="author" content="GANGCHEOL LEE">
 <meta name="dcterms.date" content="2023-08-08">
 
-<title>Gangcheol - 00. 대시보드 만들기</title>
+<title>Gangcheol - 01. 스토리 만들기</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../posts/ch2/2023-07-27-ch.2.html" rel="prev">
+<link href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Posts</li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.1. 대시보드만들기.html">Ch3</a></li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.1. 대시보드만들기.html">00. 대시보드 만들기</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Posts</li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html">Ch3</a></li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html">01. 스토리 만들기</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">00. 대시보드 만들기</h1>
+      <h1 class="title">01. 스토리 만들기</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">tableau</div>
               </div>
@@ -228,8 +228,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/ch3/2023-08-08-ch3.1. 대시보드만들기.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. 대시보드 만들기</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">01. 스토리 만들기</span></a>
   </div>
 </li>
       </ul>
@@ -246,18 +252,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#대시보드-만들기" id="toc-대시보드-만들기" class="nav-link active" data-scroll-target="#대시보드-만들기">대시보드 만들기</a>
+  <li><a href="#스토리-만들기" id="toc-스토리-만들기" class="nav-link active" data-scroll-target="#스토리-만들기">스토리 만들기</a>
   <ul class="collapse">
-  <li><a href="#연간매출" id="toc-연간매출" class="nav-link" data-scroll-target="#연간매출">연간매출</a></li>
-  <li><a href="#월간-매출" id="toc-월간-매출" class="nav-link" data-scroll-target="#월간-매출">월간 매출</a></li>
-  <li><a href="#시도별-매출" id="toc-시도별-매출" class="nav-link" data-scroll-target="#시도별-매출">시도별 매출</a>
+  <li><a href="#수도권의-연간-매출-비중" id="toc-수도권의-연간-매출-비중" class="nav-link" data-scroll-target="#수도권의-연간-매출-비중">수도권의 연간 매출 비중</a></li>
+  <li><a href="#제품-대분류별-연간-매출-비교라인-차트" id="toc-제품-대분류별-연간-매출-비교라인-차트" class="nav-link" data-scroll-target="#제품-대분류별-연간-매출-비교라인-차트">제품 대분류별 연간 매출 비교(라인 차트)</a></li>
+  <li><a href="#제품-대분류별-분기별-매출-비교" id="toc-제품-대분류별-분기별-매출-비교" class="nav-link" data-scroll-target="#제품-대분류별-분기별-매출-비교">제품 대분류별 분기별 매출 비교</a></li>
+  <li><a href="#제품-대분류별-월별-매출-비교" id="toc-제품-대분류별-월별-매출-비교" class="nav-link" data-scroll-target="#제품-대분류별-월별-매출-비교">제품 대분류별 월별 매출 비교</a></li>
+  <li><a href="#대시보드생성" id="toc-대시보드생성" class="nav-link" data-scroll-target="#대시보드생성">대시보드생성</a>
   <ul class="collapse">
-  <li><a href="#맵차트에-파이차트-오버레이" id="toc-맵차트에-파이차트-오버레이" class="nav-link" data-scroll-target="#맵차트에-파이차트-오버레이">맵차트에 파이차트 오버레이</a></li>
+  <li><a href="#연간-매출-비중" id="toc-연간-매출-비중" class="nav-link" data-scroll-target="#연간-매출-비중">연간 매출 비중</a></li>
+  <li><a href="#대분류별-연간-매출-비교" id="toc-대분류별-연간-매출-비교" class="nav-link" data-scroll-target="#대분류별-연간-매출-비교">대분류별 연간 매출 비교</a></li>
   </ul></li>
-  <li><a href="#대시보드-생성" id="toc-대시보드-생성" class="nav-link" data-scroll-target="#대시보드-생성">대시보드 생성</a>
-  <ul class="collapse">
-  <li><a href="#연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" id="toc-연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" class="nav-link" data-scroll-target="#연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가">연간매출 클릭시 월간매출과 시도 매출에 변화옵션추가</a></li>
-  </ul></li>
+  <li><a href="#새-스토리-생성" id="toc-새-스토리-생성" class="nav-link" data-scroll-target="#새-스토리-생성">새 스토리 생성</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">summary</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -268,73 +275,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="대시보드-만들기" class="level1">
-<h1>대시보드 만들기</h1>
-<section id="연간매출" class="level2">
-<h2 class="anchored" data-anchor-id="연간매출">연간매출</h2>
-<p><code>-</code> 연간매출 워크시트 생성</p>
+<section id="스토리-만들기" class="level1">
+<h1>스토리 만들기</h1>
+<section id="수도권의-연간-매출-비중" class="level2">
+<h2 class="anchored" data-anchor-id="수도권의-연간-매출-비중">수도권의 연간 매출 비중</h2>
+<p><code>-</code> 지역 그룹 만들기</p>
+<p><img src="20.png" width="200"></p>
+<p><code>-</code> 수도권을 제외한 나머지 지역을 기타로 묶기</p>
+<p><img src="21.png" width="200"></p>
+<p><code>-</code> 생성한 <code>지역(그룹)</code> 변수와 <code>매출</code> 변수를 이용하여 파이차트 생성</p>
 <ul>
-<li>주문일자와 매출을 이용하여 하이라이트 테이블 생성</li>
+<li><p>주문일자를 열선반에놓고, 크기로 되어있는 합계(매출)을 마커에서 제거</p></li>
+<li><p>다시 매출을 레이블 마커에 놓고 퀵테이블 계산에서 구성비율 선택</p></li>
+<li><p>생성한 레이블 마커에서 테이블 계산 편집을 눌러 아래와 같이 체크</p></li>
 </ul>
-<p><img src="1.png" width="800"></p>
+<p><img src="22.png" width="200"></p>
+<ul>
+<li><p>그 후 서식에서 백분율 <span class="math inline">\(\to\)</span> 소수점 2자리 까지로 변경</p></li>
+<li><p>그 후 각종 서식을 본인 입맞에 맞게 수정 하면</p></li>
+</ul>
+<p><img src="23.png" width="500"></p>
 </section>
-<section id="월간-매출" class="level2">
-<h2 class="anchored" data-anchor-id="월간-매출">월간 매출</h2>
-<p><code>-</code> 월간매출 워크시트 생성 (2018 ~ 2021에 월간 매출 합을 계산)</p>
-<p><img src="2.png" width="800"></p>
+<section id="제품-대분류별-연간-매출-비교라인-차트" class="level2">
+<h2 class="anchored" data-anchor-id="제품-대분류별-연간-매출-비교라인-차트">제품 대분류별 연간 매출 비교(라인 차트)</h2>
+<p><code>-</code> 열선반에 제품대분류, 주문일자를 넣고 행 선반에는 매출을 드래그</p>
+<p><code>-</code> 그 후 위 그래프처럼 매출의 퀵 테이블 계산을 구성비율로 변경</p>
+<p><code>-</code> 아래와 같이 테이블 계산 편집 수행</p>
+<p><img src="24.png" width="150"></p>
+<p><code>-</code> 축 편집을 이용하여 최소값부터 데이터를 표시</p>
+<p><img src="25.png" width="250"></p>
+<p><code>-</code> 분석 패널에서 0.5 상수라인을 추가</p>
+<p><code>-</code> 시트 이름을 <strong>“제품 대분류별 연간 매출 비교”</strong> 로 설정</p>
+<p><img src="26.png" width="550"></p>
 </section>
-<section id="시도별-매출" class="level2">
-<h2 class="anchored" data-anchor-id="시도별-매출">시도별 매출</h2>
-<p><code>-</code> 시도별 매출을 지도형태로 표현</p>
-<p><code>-</code> 시도 변수를 이용하여 위도와 경도 데이터 산출</p>
-<p><img src="3.png" width="250"></p>
-<p><code>-</code> 그런 다음 새로운 워크시트를 생성해 시도를 더블클릭</p>
-<p><code>-</code> 그 다음 마크를 맵으로 변경</p>
-<p><img src="4.png" width="800"></p>
-<p><code>-</code> 백그라운드 레이어 선택후 투명도를 100으로 설정</p>
-<p><img src="5.png" width="200"></p>
-<p><img src="6.png" width="500"></p>
-<p><code>-</code> 매출을 색상 마크에 드래그</p>
-<p><img src="7.png" width="500"></p>
-<section id="맵차트에-파이차트-오버레이" class="level3">
-<h3 class="anchored" data-anchor-id="맵차트에-파이차트-오버레이">맵차트에 파이차트 오버레이</h3>
-<p><code>-</code> 열에 경도를 <code>ctrl + 마우스 왼쪽</code>으로 드래그</p>
-<p><img src="8.png" width="250"></p>
-<p><code>-</code> 새롭게 산출된 <code>경도(생성됨 (2))</code>에서 합계(매출을) 마크에서 제외하고 맵을 파이차트로 변경</p>
-<p><img src="9.png" width="150"></p>
-<p><code>-</code> 그 후, 고객 세그먼트를 색상, 매출을 크기와 각도로 넣고 효과있는 색상 테두리를 흰색으로 지정</p>
-<p><img src="10.png" width="750"></p>
-<p><code>-</code> 이중축 사용</p>
-<p><img src="11.png" width="200"></p>
-<p><img src="12.png" width="500"></p>
+<section id="제품-대분류별-분기별-매출-비교" class="level2">
+<h2 class="anchored" data-anchor-id="제품-대분류별-분기별-매출-비교">제품 대분류별 분기별 매출 비교</h2>
+<p><code>-</code> 연도별 매출 비교 복사 후 열선반에 년(주문일자)에 있는 “+”마커를 클릭하여 분기별 매출을 생성</p>
+<p><img src="27.png" width="550"></p>
+</section>
+<section id="제품-대분류별-월별-매출-비교" class="level2">
+<h2 class="anchored" data-anchor-id="제품-대분류별-월별-매출-비교">제품 대분류별 월별 매출 비교</h2>
+<p><code>-</code> 시트 복사 후 분기를 선반 밖으로 놓고, 연속형 월별 변수 추가</p>
+<p><code>-</code> 제품대분류도 선박 밖으러 뺀 후, 분석패널에서 다항식 추세선 추가</p>
+<p><img src="28.png" width="550"></p>
+</section>
+<section id="대시보드생성" class="level2">
+<h2 class="anchored" data-anchor-id="대시보드생성">대시보드생성</h2>
+<section id="연간-매출-비중" class="level3">
+<h3 class="anchored" data-anchor-id="연간-매출-비중">연간 매출 비중</h3>
+<p><code>-</code> 새로운 대시보드 생성 후 이름 변경</p>
+</section>
+<section id="대분류별-연간-매출-비교" class="level3">
+<h3 class="anchored" data-anchor-id="대분류별-연간-매출-비교">대분류별 연간 매출 비교</h3>
+<p><code>-</code> 생성한 대시보드 복사 후 시트에서 시트 바꾸기 선택</p>
+<p><code>-</code> 분기별, 월별도 위와 동일하게 지정</p>
+<p><code>-</code> 생성한 대시보드 모두 “모든 시트 숨기기”를 설정</p>
 </section>
 </section>
-<section id="대시보드-생성" class="level2">
-<h2 class="anchored" data-anchor-id="대시보드-생성">대시보드 생성</h2>
-<p><code>-</code> 매출 대시보드 생성 후 연간 매출을 드래그</p>
-<p><code>-</code> 그다음 <code>ctrl + 마우스 왼쪽</code>으로 월간 매출을 드래그하여 아래, 시도별 매출을 월간 매출 오른쪽에 드래그</p>
-<p><img src="13.png" width="600"></p>
-<p><code>-</code> 생성된 대시보드의 범례를 보니 고객세그먼트를 제외하고 나머지 범례는 필요가 없는것 같다.</p>
-<p><code>-</code> 고객 세그먼트를 제외한 범례들을 제거하고, 고객 세그먼트 범례의 세모박스를 클릭 후 부통을 체크해 적절한 공간에 배치하자.</p>
-<p><img src="14.png" width="600"></p>
-<p><code>-</code> 또한, 연간 매출은 쓸데없이 너무 큰 비율을 차지한다. 마우스로 적당히 드래그하여 변경해준다.</p>
-<p><img src="15.png" width="500"></p>
-<section id="연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가" class="level3">
-<h3 class="anchored" data-anchor-id="연간매출-클릭시-월간매출과-시도-매출에-변화옵션추가">연간매출 클릭시 월간매출과 시도 매출에 변화옵션추가</h3>
-<p><code>-</code> 상단 메뉴바에서 아래와 같이 선택</p>
-<p><img src="16.png" width="200"></p>
-<p><code>-</code> 동작 추가 <span class="math inline">\(\to\)</span> 필터 선택</p>
-<p><img src="17.png" width="300"></p>
-<p><code>-</code> 동작 세부 옵션 추가</p>
-<p><img src="18.png" width="300"></p>
-<p><code>-</code> 월간 매출 클릭에 대한 동작 옵션도 위를 참고하여 작성 (2018 기준 변환 결과)</p>
-<p><img src="19.png" width="500"></p>
-<p><code>-</code> 생성한 대시보드 공유</p>
-<p><code>-</code> 파일 <span class="math inline">\(\to\)</span> 태블로 퍼블릭에 다른 이름으로 저장 클릭 후 대시보드 이름 입력</p>
-<p><a href="https://public.tableau.com/app/profile/leegangcheol/viz/_16914857162340/sheet3?publish=yes">대시보드 링크</a></p>
+<section id="새-스토리-생성" class="level2">
+<h2 class="anchored" data-anchor-id="새-스토리-생성">새 스토리 생성</h2>
+<p><code>-</code> 새 스토리 생성 클릭 후, 대시보드를 드래그엔드롭</p>
+<p><code>-</code> 그 후, 캡션 추가</p>
+<p><code>-</code> 그러면 캡션을 클릭할 때마다 변경된 대시보드를 확인할 수 있는 스토리를 생성!</p>
+<p><img src="29.png" width="550"></p>
+<p><code>-</code> 스토리를 우클릭하여 모든 시트숨기기로 대시보드를 모두 숨길 수 있다.</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">summary</h2>
+<p><code>-</code> 스토리 기능을 사용할 때는 스토리 포인트의 순서에 따라 작성 가능하다.</p>
+<p><code>-</code> 스토리텔링을 위한 데이터 스토리 방식은 다음과 같다.</p>
+<ul>
+<li><p>시간의 순서에 따른 구성</p></li>
+<li><p>요약에서 세부적인 정보로 드릴 다운</p></li>
+<li><p>관심사를 확대</p></li>
+<li><p>A vs B로 비교 대조</p></li>
+</ul>
+<p><code>-</code> 스토리텔링 고려사항</p>
+<ul>
+<li><p>누구에게 스토리텔링을 하는가</p></li>
+<li><p>스토리포인트간 플로우를 잘 기획했는가</p></li>
+<li><p>데이터 시각화와 스토리 포인트가 일치하는가</p></li>
+<li><p>청중이 중간에 이탈하지 않고 스토리가 잘 전개되고 있는가</p></li>
+<li><p>스토리를 불러오는데 로드 없이 구성되어 있는가</p></li>
+<li><p>각 대시보드의 인사이트간 이질성이 없는가?</p></li>
+</ul>
 
 
-</section>
 </section>
 </section>
 
@@ -574,8 +600,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../posts/ch2/2023-07-27-ch.2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ch2. 태블로 기초 이해</span>
+      <a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">00. 대시보드 만들기</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
