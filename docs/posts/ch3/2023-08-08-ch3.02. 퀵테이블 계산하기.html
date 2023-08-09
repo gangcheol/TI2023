@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="GANGCHEOL LEE">
+<meta name="dcterms.date" content="2023-08-09">
 
-<title>Gangcheol - Tableau</title>
+<title>Gangcheol - 02. 퀵테이블 계산하기 (1)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,40 +62,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -105,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Gangcheol</span>
     </a>
   </div>
@@ -145,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tableau</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Posts</li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html">Ch3</a></li><li class="breadcrumb-item"><a href="../../posts/ch3/2023-08-08-ch3.02. 퀵테이블 계산하기.html">02. 퀵테이블 계산하기 (1)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -158,20 +130,35 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Tableau</h1>
-                      </div>
+      <h1 class="title">02. 퀵테이블 계산하기 (1)</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">tableau</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>GANGCHEOL LEE </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 9, 2023</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -183,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><strong>About Me</strong></span></a>
   </div>
 </li>
@@ -207,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch1/2023-07-26-ch.1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch1/2023-07-26-ch.1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ch1. 태블로 이해하기</span></a>
   </div>
 </li>
@@ -224,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch2/2023-07-27-ch.2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch2/2023-07-27-ch.2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ch2. 태블로 기초 이해</span></a>
   </div>
 </li>
@@ -232,28 +219,28 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Ch3</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">00. 대시보드 만들기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">01. 스토리 만들기</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./posts/ch3/2023-08-08-ch3.02. 퀵테이블 계산하기.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/ch3/2023-08-08-ch3.02. 퀵테이블 계산하기.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">02. 퀵테이블 계산하기 (1)</span></a>
   </div>
 </li>
@@ -267,127 +254,85 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="tableau">tableau <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tableau ">tableau  <span class="quarto-category-count">(3)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#누계" id="toc-누계" class="nav-link active" data-scroll-target="#누계">1. 누계</a></li>
+  <li><a href="#차이" id="toc-차이" class="nav-link" data-scroll-target="#차이">2. 차이</a></li>
+  <li><a href="#구성-비율" id="toc-구성-비율" class="nav-link" data-scroll-target="#구성-비율">3. 구성 비율</a></li>
+  <li><a href="#순위" id="toc-순위" class="nav-link" data-scroll-target="#순위">4. 순위</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">summary</a></li>
+  </ul>
+</nav>
     </div>
-</div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
 
-<tr data-index="0" data-categories="tableau " data-listing-date-sort="1691506800000" data-listing-file-modified-sort="1691574804919" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="02. 퀵테이블 계산하기 (1)" data-listing-filename-sort="2023-08-08-ch3.02. 퀵테이블 계산하기.ipynb">
-<td>
-<span class="listing-date">Aug 9, 2023</span>
-</td>
-<td>
-<a href="./posts/ch3/2023-08-08-ch3.02. 퀵테이블 계산하기.html" class="title listing-title">02. 퀵테이블 계산하기 (1)</a>
-</td>
-<td>
-<span class="listing-author">GANGCHEOL LEE</span>
-</td>
-</tr>
 
-<tr data-index="1" data-categories="tableau " data-listing-date-sort="1691420400000" data-listing-file-modified-sort="1691489977826" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="01. 스토리 만들기" data-listing-filename-sort="2023-08-08-ch3.01. 스토리 만들기.ipynb">
-<td>
-<span class="listing-date">Aug 8, 2023</span>
-</td>
-<td>
-<a href="./posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="title listing-title">01. 스토리 만들기</a>
-</td>
-<td>
-<span class="listing-author">GANGCHEOL LEE</span>
-</td>
-</tr>
 
-<tr data-index="2" data-categories="tableau " data-listing-date-sort="1691420400000" data-listing-file-modified-sort="1691486624285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="00. 대시보드 만들기" data-listing-filename-sort="2023-08-08-ch3.00. 대시보드만들기.ipynb">
-<td>
-<span class="listing-date">Aug 8, 2023</span>
-</td>
-<td>
-<a href="./posts/ch3/2023-08-08-ch3.00. 대시보드만들기.html" class="title listing-title">00. 대시보드 만들기</a>
-</td>
-<td>
-<span class="listing-author">GANGCHEOL LEE</span>
-</td>
-</tr>
+<section id="누계" class="level1">
+<h1>1. 누계</h1>
+<p><code>-</code> 월별 매출과 누적매출화면 작성</p>
+<p><code>1</code> 다음과 같이 선반에 각각의 변수를 설정</p>
+<p><img src="30.png" width="250"></p>
+<p><code>2</code> 그후 누계 계산을 위해 다음과 같이 선택</p>
+<p><img src="31.png" width="250"></p>
+<p><code>3</code> 두 그래프를 합치기 위해 이중축을 선택</p>
+<p><img src="32.png" width="250"></p>
+<p><code>4</code> 생성된 월별 매출과 누계 차트</p>
+<p><img src="33.png" width="550"></p>
+</section>
+<section id="차이" class="level1">
+<h1>2. 차이</h1>
+<p><code>1</code> 분기별 매출을 확인하고 마커를 막대차트로 변경</p>
+<p><img src="34.png" width="250"></p>
+<p><code>2</code> 퀵테이블에서 차이선택</p>
+<p><img src="35.png" width="150"></p>
+<p><code>3</code> +,- 에 따라 색깔 넣기</p>
+<p><img src="36.png" width="250"></p>
+<p><code>4</code>. 시트를 하나 새로 만든 후 선반과 마커에서 다음 과정을 수행</p>
+<p><img src="37.png" width="350"></p>
+<p><code>5</code> 각 연도별 1월을 제외한 모든 월을 1월과 비교</p>
+<p><img src="38.png" width="250"></p>
+<p><code>6</code> 그러나 모든 데이터가 2018년 1월과 비교하고 있으므로 다음과 같이 변경</p>
+<p><img src="39.png" width="250"></p>
+<p><code>7</code> 비율 차이도 살펴볼 수 있음!</p>
+<p><img src="40.png" width="250"></p>
+</section>
+<section id="구성-비율" class="level1">
+<h1>3. 구성 비율</h1>
+<p><code>1</code> 퀵테이블 구성비율 게산</p>
+<p><img src="41.png" width="350"></p>
+<p><code>2</code> 테이블 계산 편집 <code>다음을 사용하여 계산</code>에서 <code>제품 대분류</code> 체크박스 해제</p>
+<p><code>3</code> 분석 패널에 있는 총계를 소계로 드래그</p>
+<p><img src="42.png" width="450"></p>
+</section>
+<section id="순위" class="level1">
+<h1>4. 순위</h1>
+<p><code>1</code> 퀵 테이블 계산에서 순위 선택</p>
+<p><img src="43.png" width="350"></p>
+<p><code>2</code> 테이블 계산편집을 이용하여 전과 같이 체크박스 해제</p>
+<p><code>3</code> 마커에 매출을 하나 더 추가에 퀵테이블 계산 <span class="math inline">\(\to\)</span> 순위를 선택하여 전체 순위 테이블도 추가</p>
+<p><code>4</code> 정수 표현 : 각 매출 마커에 서식에서 패널로 들어가 표시형식을 표준으로 변경</p>
+<p><code>5</code> 생성된 테이블에 가독성을 위해 마커에 있는 계산된 순위 매출을 <code>테이블 리스트</code>로 던진 후 이름을 변경</p>
+<p><code>6</code> 그후, 합계 매출을 마커에 추가하여 합계 매출을 기준으로 내림차순 정렬</p>
+<p><img src="44.png" width="550"></p>
+</section>
+<section id="summary" class="level1">
+<h1>summary</h1>
+<ol type="1">
+<li><p>누계는 가각의 값을 누적해서 보는 개념이다.</p></li>
+<li><p>차이는 앞의 있는 항목과 어느 정도 차이가 나는지를 구하는 것!</p></li>
+<li><p>구성비율은 전체에서 각 멤버들의 비중을 확인할때 활용!</p></li>
+<li><p>순위는 각 멤버들의 측정값을 기준으로 순위를 나타날 때 사용한다.</p></li>
+</ol>
 
-<tr data-index="3" data-categories="tableau" data-listing-date-sort="1690383600000" data-listing-file-modified-sort="1691482457756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-title-sort="ch2. 태블로 기초 이해" data-listing-filename-sort="2023-07-27-ch.2.ipynb">
-<td>
-<span class="listing-date">Jul 27, 2023</span>
-</td>
-<td>
-<a href="./posts/ch2/2023-07-27-ch.2.html" class="title listing-title">ch2. 태블로 기초 이해</a>
-</td>
-<td>
-<span class="listing-author">GANGCHEOL LEE</span>
-</td>
-</tr>
 
-<tr data-index="4" data-categories="tableau" data-listing-date-sort="1690297200000" data-listing-file-modified-sort="1691482457756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-title-sort="ch1. 태블로 이해하기" data-listing-filename-sort="2023-07-26-ch.1.ipynb">
-<td>
-<span class="listing-date">Jul 26, 2023</span>
-</td>
-<td>
-<a href="./posts/ch1/2023-07-26-ch.1.html" class="title listing-title">ch1. 태블로 이해하기</a>
-</td>
-<td>
-<span class="listing-author">GANGCHEOL LEE</span>
-</td>
-</tr>
-</tbody>
+</section>
 
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -621,6 +566,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../posts/ch3/2023-08-08-ch3.01. 스토리 만들기.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">01. 스토리 만들기</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
